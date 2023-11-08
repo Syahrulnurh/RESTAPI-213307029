@@ -1,6 +1,8 @@
 <h1 align="center">Hi 👋, I'm Syahrul</h1>
 <h3 align="center">Information technology student</h3>
 
+- ⚡ Fun fact **You'll Never Walk Alone**
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
