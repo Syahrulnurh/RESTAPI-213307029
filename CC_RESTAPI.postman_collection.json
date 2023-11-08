@@ -1,0 +1,394 @@
+{
+	"info": {
+		"_postman_id": "cc9a485b-8225-4d30-a461-f2625dcb0be6",
+		"name": "CC_RESTAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30900851",
+		"_collection_link": "https://www.postman.com/syahrulnurh/workspace/restapi-213307029/collection/30900851-cc9a485b-8225-4d30-a461-f2625dcb0be6?action=share&source=collection_link&creator=30900851"
+	},
+	"item": [
+		{
+			"name": "get api-karyawan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/restapi-213307029/api-karyawan.php?function=getKaryawan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"restapi-213307029",
+						"api-karyawan.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "getKaryawan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tambah karyawan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Syahrul",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "Laki-Laki",
+							"type": "text"
+						},
+						{
+							"key": "handphone",
+							"value": "08123456789",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Yogyakarta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:80/restapi-213307029/api-karyawan.php?function=insertKaryawan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"restapi-213307029",
+						"api-karyawan.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "insertKaryawan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cek hasil tambah",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Syahrul",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "Laki-Laki",
+							"type": "text"
+						},
+						{
+							"key": "handphone",
+							"value": "08123456789",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Yogyakarta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:80/restapi-213307029/api-karyawan.php?function=getKaryawanById&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"restapi-213307029",
+						"api-karyawan.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "getKaryawanById"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit karyawan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Syahrul NH",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "Laki-Laki",
+							"type": "text"
+						},
+						{
+							"key": "handphone",
+							"value": "085235448779",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Semarang",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:80/restapi-213307029/api-karyawan.php?function=updateKaryawan&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"restapi-213307029",
+						"api-karyawan.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "updateKaryawan"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cek hasil update",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Syahrul NH",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "Laki-Laki",
+							"type": "text"
+						},
+						{
+							"key": "handphone",
+							"value": "085235448779",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Semarang",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:80/restapi-213307029/api-karyawan.php?function=getKaryawan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"restapi-213307029",
+						"api-karyawan.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "getKaryawan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete karyawan",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Syahrul NH",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "Laki-Laki",
+							"type": "text"
+						},
+						{
+							"key": "handphone",
+							"value": "085235448779",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Semarang",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:80/restapi-213307029/api-karyawan.php?function=deleteKaryawan&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"restapi-213307029",
+						"api-karyawan.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "deleteKaryawan"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cek hasil hapus",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Syahrul NH",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "Laki-Laki",
+							"type": "text"
+						},
+						{
+							"key": "handphone",
+							"value": "085235448779",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Semarang",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:80/restapi-213307029/api-karyawan.php?function=getKaryawan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"restapi-213307029",
+						"api-karyawan.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "getKaryawan"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
